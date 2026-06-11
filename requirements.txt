@@ -1,0 +1,7 @@
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+matplotlib>=3.7
+pyarrow>=14.0
+pandas-datareader>=0.10
+river>=0.21

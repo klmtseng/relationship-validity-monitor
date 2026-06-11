@@ -1,0 +1,17 @@
+# market data is downloaded, never committed
+data/processed/*.parquet
+data/external/
+*.parquet
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# os
+.DS_Store
+
+# private application/career notes — never publish
+APPLICATION_NOTES.md
