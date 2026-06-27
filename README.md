@@ -14,6 +14,19 @@ The repo also does something most "I built a detector" projects don't: it **swap
 own home-grown parts for the mature, field-standard component and reports — honestly — whether
 the upgrade changed any conclusion.** The headline finding is that *newer is not always better*.
 
+## Validity audit — a two-stage self-falsification protocol
+
+`validity_audit/` packages the research-hygiene discipline this repo embodies into a **reusable checklist
++ template**: a Stage-1 internal mechanical audit (leakage, survivorship, **arithmetic/protocol bugs**,
+statistical validity, multiple-testing via `dsr_pbo`) and a **mandatory Stage-2 independent reviewer** —
+one that *did not build the code*. See **[validity_audit/README.md](validity_audit/README.md)**.
+
+Core lesson (learned the hard way): an internal leakage audit catches *leakage* but routinely misses
+*arithmetic/protocol bugs* — log returns compounded as simple, max-drawdown over the global peak,
+in-sample blended into the headline. In one case study the internal audit passed clean; an independent
+reviewer then found three flattering bugs and the corrected OOS-only re-run **retracted the headline**.
+That is the protocol working.
+
 ## What's inside
 
 ```
