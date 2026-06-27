@@ -14,7 +14,7 @@ code — is mandatory, not optional.**
 > point-in-time features). An *independent* reviewer then found three flattering bugs (log-return
 > compounding, ~64% in-sample blending, MDD denominator) — and the corrected, OOS-only re-run showed the
 > portfolio edge over equal-weight was **not robust**. The headline was retracted. That is the protocol
-> working as intended.
+> working as intended. → full write-up: **[CASE_STUDY.md](CASE_STUDY.md)**.
 
 ## Stage 1 — internal mechanical audit (write to `audit/leak_audit.md`)
 Use `leak_audit_template.py` as a starting point. Check, with a red flag for each:
